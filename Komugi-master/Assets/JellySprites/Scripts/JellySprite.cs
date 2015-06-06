@@ -818,7 +818,7 @@ public abstract class JellySprite : MonoBehaviour
 			joint.connectedAnchor = point1.Body2D.transform.localPosition - point2.Body2D.transform.localPosition;
 			joint.distance = 0.0f;
 			
-			joint.collideConnected = m_CollideConnected;
+			joint.enableCollision = m_CollideConnected;
 			joint.frequency = m_Stiffness;
 			joint.dampingRatio = m_DampingRatio;
 		}
